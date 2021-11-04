@@ -63,3 +63,20 @@ Hex
 
 - NUMBER GROUPING
 32 Bit
+
+####CODE
+You can then copy the code in the right window.
+
+The code must be changed!
+
+The following is needed to be changed:
+- change uint32_t to const long
+- name of the array: ledarray[] to own ascending name
+- Add PROGMEM after the array
+
+
+The code should be structured as follows:
+
+*const long Xmas001[] PROGMEM = {
+  0x00000000, 0x00000000, // 1
+};*
