@@ -1,5 +1,7 @@
 # Animated Xmas pullover
-[![N|Solid](https://img.shields.io/badge/platform-Arduino-blue)](https://img.shields.io/badge/platform-Arduino-blue) [![N|Solid](https://img.shields.io/badge/Model-ESP8266-yellowgreen)](https://img.shields.io/badge/Model-ESP8266-yellowgreen) [![N|Solid](https://img.shields.io/badge/Release-V%204.0.1-red)](https://img.shields.io/badge/Release-V%204.0.1-red) [![N|Solid](https://img.shields.io/badge/Type-Wearable-blueviolet)](https://img.shields.io/badge/Type-Wearable-blueviolet)  
+[![N|Solid](https://img.shields.io/badge/platform-Arduino-blue)](https://img.shields.io/badge/platform-Arduino-blue) [![N|Solid](https://img.shields.io/badge/Model-ESP8266-yellowgreen)](https://img.shields.io/badge/Model-ESP8266-yellowgreen) [![N|Solid](https://img.shields.io/badge/Release-V%204.0.1-red)](https://img.shields.io/badge/Release-V%204.0.1-red) [![N|Solid](https://img.shields.io/badge/Type-Wearable-blueviolet)](https://img.shields.io/badge/Type-Wearable-blueviolet) [![N|Solid](https://img.shields.io/badge/Library-FASTLED-informational)](https://img.shields.io/badge/Library-FASTLED-informational)   
+
+
 
 With this project we will make an animated pullover for the Christmas season.
 Controlled by a 32x8 LED matrix and a wemos D1 mini.
@@ -64,7 +66,7 @@ Hex
 - NUMBER GROUPING
 32 Bit
 
-#### CODE
+####CODE
 You can then copy the code in the right window.
 
 The code must be changed!
@@ -80,3 +82,17 @@ The code should be structured as follows:
 *const long Xmas001[] PROGMEM = {
   0x00000000, 0x00000000, // 1
 };*
+
+## _Arduino_
+#### Library(s)
+[- FastLED](http://fastled.io/ "- FastLED")
+
+#### Code 
+The code is fairly basic.
+- The matrix is ​​controlled by the RX pin.
+- Depending on the size of the LED matrix, the number of LEDs will have to be adjusted.
+
+- The brightness is set to 50% so as not to consume too much power.
+
+- The function RUNMATRIX will fetch frame by frame in the xmas.h file.
+With this function one can create multiple animations and choose which one to use.
