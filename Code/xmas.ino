@@ -7,7 +7,7 @@
    https://sourceforge.net/projects/led-matrix-studio/   
 
   Sprites created by Barremans
-  https://github.com/barremans/barremans
+  https://github.com/barremans/Xmas_Pullover
 */
 #define SKETCH_VERSION "4.0.1"
 /*
